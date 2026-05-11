@@ -3,65 +3,48 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SQOD Interactive Troubleshooting Guide</title>
+<title>Patient Troubleshooting Guide</title>
 <meta name="google" content="notranslate">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{ --brand:#212529; --pink:#325083; --bg:#E8EDEE; --card:#fff; }
-body{margin:0;background:var(--bg);font-family:'Poppins',sans-serif;color:var(--brand);display:flex;justify-content:center;padding:32px 0;}
-.card{position:relative;width:65%;max-width:760px;min-height:70vh;background:#fff;border-radius:20px;padding:50px 32px 80px;box-shadow:0 10px 32px rgba(8,10,82,0.10);display:flex;align-items:center;}
-.card.dynamic{min-height:auto;height:auto;padding:170px 40px 110px;align-items:flex-start;}
-.content{max-width:740px;margin:0 auto;text-align:center;width:100%;}
+body{
+  margin:0;
+  background-image: url(https://customer-hajmoiugonipqw4vjycu.s3.eu-west-2.amazonaws.com/site-customization/image/1778167036_Untitled%20design%20%2815%29.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family:'Poppins',sans-serif;
+  color:var(--brand);
+  display:flex;
+  justify-content:center;
+  padding:32px 0;
+}
+.card{position:relative;width:70%;max-width:860px;min-height:70vh;background:#fff;border-radius:20px;padding:50px 32px 80px;box-shadow:0 10px 32px rgba(8,10,82,0.10);display:flex;align-items:center;}
+.card.dynamic{min-height:auto;height:auto;padding:84px 50px 120px;}
+.content{max-width:740px;margin:0 auto;text-align:center;}
 .answer .content{text-align:left;font-size:1.12rem;line-height:1.72;max-width:660px;}
 h1{font-size:1.74rem;margin:0 0 18px;font-weight:600;}
 .btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:50px;}
 .btn{background:var(--pink);color:#fff;border:none;padding:12px 18px;border-radius:10px;cursor:pointer;font-size:1rem;min-width:140px;}
 .logo-top{position:absolute;top:20px;right:20px;max-width:290px;}
-.logo-bottom{position:absolute;bottom:20px;left:20px;max-width:100px;opacity:0.9;}
 .footer-icons{position:absolute;bottom:20px;right:20px;display:flex;gap:20px;}
 .icon-btn{background:none;border:none;font-size:1.7rem;cursor:pointer;color:var(--brand);}
 a{color:var(--pink);text-decoration:underline;}
 .answer-text{max-width:660px;margin:0 auto;text-align:left;}
 .note-small{color:var(--pink);font-style:italic;font-size:1.1rem;font-weight:400;display:block;margin-top:6px;}
-.lang-switcher{position:absolute;top:20px;left:20px;display:flex;align-items:center;background:#fff;padding:4px;border-radius:999px;box-shadow:0 4px 12px rgba(8,10,82,0.08);font-size:0.85rem;z-index:5;gap:2px;}
+.lang-switcher{position:absolute;bottom:20px;left:20px;display:flex;align-items:center;background:#fff;padding:4px;border-radius:999px;box-shadow:0 4px 12px rgba(8,10,82,0.08);font-size:0.85rem;z-index:5;gap:2px;}
 .lang-pill{display:flex;align-items:center;gap:6px;border:none;background:transparent;cursor:pointer;font-family:'Poppins',sans-serif;font-size:0.85rem;padding:4px 10px;border-radius:999px;transition:background 0.15s ease,color 0.15s ease;}
 .lang-pill .lang-code{font-weight:600;padding:2px 6px;border-radius:999px;background:#F3F4FD;}
-.lang-pill.lang-active{background:var(--brand);color:#fff;}
+.lang-pill.lang-active{background:#CFAB7A;color:#fff;}
 .lang-pill.lang-active .lang-code{background:rgba(255,255,255,0.16);color:#fff;}
-.card.long{
-  max-width:2000px;          
-  padding:50px 40px 100px;
+.card.answer .answer-text {
+  padding-top: 28px;
 }
 
-.card.long .pink-title{
-  margin-top:0;
+.card.dynamic.answer .answer-text {
+  padding-top: 40px;
 }
-.pink-title{
-  color:var(--pink);
-  font-weight:600;
-  font-size:1.3rem;
-  text-align:center;
-  margin:0 0 18px 0;
-}
-
-.dash-block{
-  margin-top:8px;
-  padding-left:18px;
-}
-
-.dash{
-  display:block;
-  position:relative;
-  margin-bottom:6px;
-}
-
-.dash::before{
-  content:"- ";
-  position:absolute;
-  left:-18px;
-  font-weight:600;
-}
-
 </style>
 </head>
 <body>
